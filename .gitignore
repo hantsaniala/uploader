@@ -66,3 +66,4 @@ go.work
 uploaded/
 source/
 config.json
+dist/
