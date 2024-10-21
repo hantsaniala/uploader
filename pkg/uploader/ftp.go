@@ -44,7 +44,7 @@ func Push(c Config, s Server, f string) error {
 	}
 
 	// Upload the file to the destination path
-	if err := client.UploadFile(filepath.Join(c.Destination, f), fileData); err != nil {
+	if err := client.UploadFile(fmt.Sprintf("%s/%s", c.Destination, f), fileData); err != nil {
 		return err
 	}
 	return nil
